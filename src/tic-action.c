@@ -28,7 +28,7 @@ void    action()
             message = "GGWP :D";
         }
 
-        DrawText(TextFormat("Current Player: %c", player == 1 ? 'x' : 'o'), 25, 10, 40, VIOLET);
+        DrawText(TextFormat("Current Player: %c", player == 1 ? 'x' : 'o'), 25, 10, 40, DARKBLUE);
         DrawText(message, 25, 60, 40, VIOLET);
         EndDrawing();
     }
