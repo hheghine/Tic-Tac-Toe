@@ -17,12 +17,12 @@ bool    update_square(uint8_t x, uint8_t y, uint8_t player)
 
     Vector2 mouse_position = GetMousePosition();
 
-    DrawRectangleLines(pos_x, pos_y, square_size, square_size, DARKBLUE);
+    DrawRectangleLines(pos_x, pos_y, square_size, square_size, GREEN);
 
     if (player == 1)
-        DrawText("x", pos_x + 20, pos_y + 10, square_size - 20, VIOLET);
+        DrawText("x", pos_x + 20, pos_y + 10, square_size - 20, LIGHTGRAY);
     else if (player == 2)
-        DrawText("o", pos_x + 20, pos_y + 10, square_size - 20, PINK);
+        DrawText("o", pos_x + 20, pos_y + 10, square_size - 20, LIGHTGRAY);
     else if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
     {
         if (mouse_position.x > pos_x

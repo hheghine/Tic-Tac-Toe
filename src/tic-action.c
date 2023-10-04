@@ -9,7 +9,7 @@ void    action()
     while (!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(RAYWHITE);
+        ClearBackground(BLANK);
         board_update(&board, &player);
 
         if(win_check(board, 1))
@@ -28,8 +28,8 @@ void    action()
             message = "GGWP :D";
         }
 
-        DrawText(TextFormat("Current Player: %c", player == 1 ? 'x' : 'o'), 25, 10, 40, DARKBLUE);
-        DrawText(message, 25, 60, 40, VIOLET);
+        DrawText(TextFormat("Current Player: %c", player == 1 ? 'x' : 'o'), 25, 10, 40, GREEN);
+        DrawText(message, 25, 60, 40, LIGHTGRAY);
         EndDrawing();
     }
 }

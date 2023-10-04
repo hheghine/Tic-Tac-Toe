@@ -6,16 +6,16 @@ void    win_init()
     SetTargetFPS(60);
 }
 
-void    win_run()
-{
-    while (!WindowShouldClose())
-    {
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
+// void    win_run()
+// {
+//     while (!WindowShouldClose())
+//     {
+//         BeginDrawing();
+//         ClearBackground(RAYWHITE);
 
-        EndDrawing();
-    }
-}
+//         EndDrawing();
+//     }
+// }
 
 int main()
 {
